@@ -23,6 +23,15 @@ export default function FeaturedRow({id,title,description}) {
         <RestaurantCard 
         id={123} imgUrl="https://links.papareact.com/gn7" title="Yo Sush" rating={4.5} genre="Japeneee" address="123 Main St" short_description="this is test desc" dishes={[]} long={20} lat={0}
         />
+					 <RestaurantCard 
+        id={123} imgUrl="https://links.papareact.com/gn7" title="Yo Sush" rating={4.5} genre="Japeneee" address="123 Main St" short_description="this is test desc" dishes={[]} long={20} lat={0}
+        />
+				 <RestaurantCard 
+        id={123} imgUrl="https://links.papareact.com/gn7" title="Yo Sush" rating={4.5} genre="Japeneee" address="123 Main St" short_description="this is test desc" dishes={[]} long={20} lat={0}
+        />
+				 <RestaurantCard 
+        id={123} imgUrl="https://links.papareact.com/gn7" title="Yo Sush" rating={4.5} genre="Japeneee" address="123 Main St" short_description="this is test desc" dishes={[]} long={20} lat={0}
+        />
      </ScrollView>
     </View>
   )

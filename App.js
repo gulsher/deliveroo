@@ -3,7 +3,9 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './screens/HomeScreen';
+import 'react-native-url-polyfill/auto';
 const Stack = createNativeStackNavigator();
+
 export default function App() {
   return (
     <NavigationContainer>

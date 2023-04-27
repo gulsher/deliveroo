@@ -61,24 +61,18 @@ useEffect(()=>{
                 {/* categories */}
                 <Categories />
                 {/* featured row */}
-                <FeaturedRow
-                id="123"
-                title="Featured"
-                description="paid placement for our partners"
+
+                {featuredCategories?.map(category=>{
+                   return  <FeaturedRow
+                     key={category._id}
+                     id={category._id}
+                     title={category.name}
+                     description={category.short_description}
+                     
+                     />
+                })}
+               
                 
-                />
-                <FeaturedRow
-                id="1234"
-                title="Featured"
-                description="paid placement for our partners"
-                
-                />
-                <FeaturedRow
-                id="1235"
-                title="Featured"
-                description="paid placement for our partners"
-                
-                />
             </ScrollView>
     </SafeAreaView>
   )

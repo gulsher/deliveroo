@@ -3,6 +3,7 @@ import React, { useLayoutEffect } from 'react'
 import { useNavigation, useRoute } from '@react-navigation/native'
 import {ArrowLeftIcon , ChevronRightIcon , StarIcon , MapPinIcon, QuestionMarkCircleIcon } from 'react-native-heroicons/solid'
 import DishRow from '../components/DishRow'
+import BasketIcon from '../components/BasketIcon'
 export default function RestaurantScreen() {
 const navigation = useNavigation();
 
@@ -26,6 +27,8 @@ const navigation = useNavigation();
     },[])
 console.log(dishes)
   return (
+    <>
+    <BasketIcon />
     <ScrollView>
       <View className='relative'>
         <Image source={{
@@ -77,5 +80,6 @@ console.log(dishes)
             })}
         </View>
     </ScrollView>
+    </>
   )
 }

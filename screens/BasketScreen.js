@@ -21,7 +21,7 @@ export default function BasketScreen() {
         },{});
         setGroupedItemsInBasket(groupedItems)
     },[items])
-    console.log(groupedItemsInBasket)
+    
   return (
     <SafeAreaView className='flex-1 bg-white'>
       <View className='flex-1 bg-gray-100'>
@@ -69,7 +69,7 @@ export default function BasketScreen() {
                 <Text>Order Total</Text>
                 <Text className='font-extrabold' >${toatlBaseket + 5.99}</Text>
             </View>
-            <TouchableOpacity className='rounded-lg bg-[#00CCBB] p-4'>
+            <TouchableOpacity onPress={()=>navigation.navigate('PreparingOrderScreen')} className='rounded-lg bg-[#00CCBB] p-4'>
                 <Text className='text-center text-white text-xl font-bold'>Place Order</Text>
             </TouchableOpacity>
         </View>
